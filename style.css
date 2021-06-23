@@ -140,7 +140,7 @@ a.left:hover:after{
     transform-origin: bottom left;
 }
 #load{
-    border:rgb(0, 0, 0) 5px solid;
+    border:rgb(255, 255, 255) 5px solid;
     border-top:5px transparent solid;
     border-radius: 50%;
     height: 100px;
@@ -192,7 +192,6 @@ transform: translateZ(0);
 .paral-card{
     height:32vh;
     border-radius:30px; 
-    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -204,6 +203,7 @@ transform: translateZ(0);
 }
 .paral-card img{
     height:32vh;
+    width:auto;
     border-radius:30px; 
 }
 
@@ -216,7 +216,6 @@ transform: translateZ(0);
     background-color: rgb(230, 215, 158);
     color:black;
     transition:0.7s;
-    padding:2px;
 }
 .card:hover .paral-card{
     background-color:#130f0d;
@@ -356,7 +355,8 @@ transform: translateZ(0);
     align-self: center;
     justify-self:center;
     height:50vh;
-    background:linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),url(./resources/back-1.jpg)center / cover fixed no-repeat;
+    background:rgb(20, 20, 20);  
+    color:rgb(255, 255, 255);
 }
 .parallax h1{
     font-family:newFont;
