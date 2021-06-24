@@ -227,13 +227,13 @@ transform: translateZ(0);
 .slideshow{
     display: flex;
     height:70vh;
-    background: #000000b6 ;
+    background: hsla(0, 0%, 0%, 0.714) ;
     border-radius:50px;
         overflow: hidden;
 }
 .slide-img{
     border-radius:50px;
-    height:70vh;
+    border-top-right-radius: 50px;
     width:50%;
     overflow: hidden;
 }
@@ -241,7 +241,9 @@ transform: translateZ(0);
 #slides{
     position:relative;
     height:70vh;
-    list-style-type: none;
+     border-top-right-radius: 25px;
+
+    overflow:hidden;
 }
 .slide{
     position:absolute;
@@ -290,6 +292,7 @@ transform: translateZ(0);
     text-align: center;
     align-self: center;
     justify-self:center;
+
 }
 .slide-text h1{
     line-height:50px;
@@ -355,7 +358,7 @@ transform: translateZ(0);
     align-self: center;
     justify-self:center;
     height:50vh;
-    background:rgb(20, 20, 20);  
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(./resources/back-1.jpg)center/cover fixed;  
     color:rgb(255, 255, 255);
 }
 .parallax h1{
