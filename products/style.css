@@ -326,7 +326,7 @@ a.left:after{
     padding:0;
 }
 .card{
-    width:90vw; 
+    width:92vw; 
     height:22vh;
 }
 .card img{
@@ -345,7 +345,6 @@ footer{
     height: fit-content;
     padding:0;
     overflow: hidden;
-    border:1px solid black;
     width: 100vw;
 }
 .fot-1 img{
@@ -358,6 +357,5 @@ footer{
 }
 .fot-2 iframe{
     width:100vw;
-    
 }
 }

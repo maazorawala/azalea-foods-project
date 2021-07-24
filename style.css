@@ -99,8 +99,6 @@ a.left:hover:after{
     transform-origin: bottom left;
 }
 #load{
-    border:rgb(0, 0, 0) 5px solid;
-    border-top:5px transparent solid;
     border-radius: 50%;
     height: 100px;
     width: 100px;
@@ -289,7 +287,7 @@ transform: translateZ(0);
     background:#000000;
 }
 #row1 .row-img{
-    border:1px solid black;
+    
     background: url(./resources/brooke-lark-JkTv__BqmaA-unsplash.jpg)center / cover ;
 }
 #row2 .row-img{
@@ -352,7 +350,7 @@ transform: translateZ(0);
     transition:0.5s;
 }
 .cont-container{
-    height:75vh;
+    height:74vh;
     margin-top:4rem;
 }
 .text-box{
@@ -424,7 +422,6 @@ footer{
     display: flex;
     background:#ffffff00;
     color:rgb(0, 0, 0);
-    border:1px solid #000;
 }
 .fot-1{
     
@@ -526,8 +523,14 @@ a.left:after{
 
 .row{
     display: block;
-    overflow: visible;
+    overflow: hidden;
     height:auto;
+}
+#row1{
+    background:#fc4040;
+}
+#row2{
+    background: #000;
 }
 .row-img{
     height:50vh;
@@ -591,10 +594,11 @@ a.left:after{
 }
 .cont-container{
     height:fit-content;
+    
 }
 .column-box{
     display:block;
-    height: fit-content;
+    height: auto;
     padding:0;
 }
 .col-2{
