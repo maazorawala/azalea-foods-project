@@ -10,7 +10,7 @@ html{
     scroll-behavior: smooth;
     margin:0;
     padding:0;
-    transition:0.5s ease-in-out;
+    box-sizing: border-box;
 }
 body::-webkit-scrollbar{
     display: none;
@@ -157,9 +157,7 @@ a.left:hover:after{
     transition:0.4s;
     background:#000;
 }
-.content-company:hover .intro-content{
-    transition:0.4s; 
-}
+
 .content-company{
     height:65vh;
     width:max-width;
@@ -191,7 +189,6 @@ a.left:hover:after{
     margin-top:10%;
     font-size:1.2rem;
     font-weight: 200;
-    transition:0.5s ease-in-out;
     width:50%;
 }
 
@@ -261,4 +258,263 @@ transform-origin:bottom left;
 }
 #content-panel-4 .intro-content{
     margin-top:0%;
+}
+.contact-us{
+    background:rgb(0, 0, 0);
+}
+.flex_Style{
+    display:flex;
+}
+.card-contact{
+    height:38vh;
+    width:40vw;
+    margin:5rem;
+    background:#F2D1BA;
+    border-radius:2rem;
+    transition:0.4s ease-in-out;
+        border:0px solid white;
+}
+.center-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    justify-self:center;
+    margin-top:-4%;
+    height:50vh;
+    padding-bottom: -2rem;
+
+}
+.card-contact:hover{
+    background:#ffffff;
+    transition:0.5s;
+    border:10px solid rgb(255, 0, 0);
+}
+.card-contact i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    justify-self:center;
+    font-size:5rem;
+}
+#map{
+    height:inherit;
+    border-radius:inherit;
+    
+}
+.center-card .card-contact{
+    background:transparent;
+}
+.card-contact h2, .card-contact h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    justify-self:center;
+
+    font-size:2rem;
+}
+.contact-parent{
+    font-family: nexalight;
+    font-weight: light;
+}
+footer{
+    height:42vh;
+    display: flex;
+    background:linear-gradient(45deg,rgba(255, 255, 255, 0.4), rgba(0,0,0,0.5)),url('../resources/about1.jpg')center / cover fixed no-repeat;
+    color:rgb(255, 255, 255);
+}
+.fot-1{
+    
+    width:35vw;
+}
+.fot-2{
+    width:65vw;
+}
+.fot-1 img{
+    height:60%;
+    margin-left:35%;    
+}
+.fot-1 .icon-container{
+
+    height:30%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    justify-self:center;
+}
+.icon-container i{
+    font-size:2.5rem;
+    margin:0.5rem;
+    color:rgb(185, 185, 185);
+    transition:0.3s ease-in-out;
+    cursor:pointer;
+}
+.icon-container i:hover{
+    color:#fff8f8;
+    transition:0.4s;
+}
+.closebtn{
+        display:none;
+    }
+#open-navbar{
+    display:none;
+}
+.backToTop {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    justify-self:center;
+    font-size:1.5rem;
+    letter-spacing:15px;
+    color:white;
+}
+
+@media screen and (max-width: 576px){
+body{
+        max-width: 576px;
+        border:1px solid red;
+    }
+    .closebtn{
+        display:block;
+    }
+#open-navbar{
+    display:block;
+    margin-left:58%
+}
+footer{
+    display:block;
+    height: fit-content;
+    padding:0;
+    width:100vw;
+}
+.fot-1 img{
+    width:85vw;
+    margin-left:0;
+}
+.fot-1{
+    width:90vw;
+}
+.fot-2 iframe{
+    width:100vw;
+}
+.mysideNav a{
+    font-size:4vh;
+    text-decoration:none;
+
+    display: block;
+    padding:6.9vh;
+    text-align: center;
+    background:rgb(0, 0, 0);
+    color: rgba(255,255,255,0.5 );
+    transition:0.3s ease-out;
+}
+.mysideNav{
+    display:block;  
+    z-index: 1;
+    transition: 0.5s;
+    overflow-x: hidden;
+    width: 0px;
+    top: 0;
+    left: 0;
+    position: fixed;
+    height:100vh;
+}
+#sideNav{
+    position: fixed;
+}
+.mysideNav a:hover{
+    color: white; 
+    transition: 0.5s;
+}
+a.left:after{
+    width:0%;
+}
+.navbar{
+    display:flex;
+}
+.content-company{
+    display:block;
+    width:100vw;
+}
+#content-panel-1 .intro{
+    font-size: 5rem;
+}
+#content-panel-1{
+    background:black;
+}
+#content-panel-2{
+    background:#c42028;
+}
+#content-panel-3{
+    background:#310d20;
+}
+#content-panel-4{
+    background:black;
+}
+.content-company{
+    height:fit-content;
+}
+.intro-content{
+    margin-top:5%;
+    width:100vw;
+    font-size:1.5rem;
+
+    color:white;
+}
+#content-panel-1 .intro-content{
+    background-image: linear-gradient(45deg, #ffffff, #ff9696);
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    font-weight:bolder;
+}
+#content-panel-2 .intro-content{
+    padding-left:0;
+    padding-bottom:5%;
+    color:white;
+}
+#content-panel-4 p {
+    color:white;
+}
+#content-panel-3{
+    margin-top:-9%;
+}
+#content-panel-4{
+    margin-top:-2.2%;
+}
+#content-panel-4 .intro{
+    font-size:4.5rem;
+}
+#content-panel-4 p{
+    padding-bottom:2rem;
+}
+.contact-us{
+    display:block;
+    margin:0px;
+    padding:1rem;
+    height:60vh;
+}
+.card-contact{
+    margin:0.5rem;
+    width:88vw;
+    height:30vh;
+}
+.card-contact h2{
+    font-size:1.5rem;
+}
+.center-card{
+    height:35vh;
+    margin-top:0;
+}
 }

@@ -11,15 +11,6 @@ document.onreadystatechange = () =>{
 }   
 /**Loader function */
 
-var slides = document.querySelectorAll('#slides .slide');
-var currentSlide = 0;
-var slideInterval = setInterval(nextSlide, 3000);
-
-function nextSlide(){
-    slides[currentSlide].className = 'slide';
-    currentSlide = (currentSlide+1)%slides.length;
-    slides[currentSlide].className = 'slide showing';
-}
 /**opening and closing sidenav */
 
     const mysideNav = document.querySelector('.mysideNav');
@@ -39,3 +30,51 @@ const closeNav = function() {
 }
 
 /**opening and closing sidenav */
+
+/**google map custom api  */
+
+function initMap(){
+    map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: 19.301883359233383, lng: 73.05304812925645},
+    zoom: 18,
+    mapId: '98d0aef9b804fb11',
+    
+}); 
+    const markers = [
+        [
+            "Azalea Foods and spices",
+            19.301883359233383,
+            73.05304812925645,
+            "./placeholder.svg",
+            50,
+            31,
+        ]
+    ];
+    let i;
+    for(i=0; i<markers.length; i++){
+        const currMarker = markers[i];
+
+        
+const marker = new google.maps.Marker({
+    position: {lat: currMarker[1], lng: currMarker[2]},
+    map,
+    title: currMarker[0],
+    icon:{
+        url:currMarker[3],
+        scaledSize:new google.maps.Size(currMarker[4],currMarker[5]),
+    }
+});
+
+    const infowindow = new google.maps.InfoWindow({
+    content: currMarker[0],
+});
+marker.addListener("click", () => {
+    infowindow.open({
+        anchor: marker,
+        map,
+        shouldFocus: false,
+    });
+});
+    }
+}//19.301883359233383, 73.05304812925645
+/**google map custom api  */

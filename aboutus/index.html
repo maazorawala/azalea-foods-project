@@ -29,7 +29,7 @@
         <a href="#">
             <img src="https://i.ibb.co/JsgWj5m/Logo-with-Tm-azalea.png" style="height:100px;" class="logo" alt="">    
         </a>
-         <span id="open-navbar" style="color:white;cursor: pointer; font-size: 50px;width:max-content;" onclick="openNav()" >&#9776;</span>
+         <span id="open-navbar" style="color:rgb(0, 0, 0);cursor: pointer; font-size: 50px;width:max-content;" onclick="openNav()" >&#9776;</span>
         <div class="nav-links mysideNav " id="sideNav">
              <a href="javascript:void(0)" style="font-size: 30px;" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="../index.html" class="left">Home</a>
@@ -64,8 +64,55 @@
         </div>
         <p class="intro-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit dicta illo nemo itaque natus fugiat labore laborum distinctio, voluptatem ea facilis maxime blanditiis, necessitatibus harum! Aliquid earum ipsum ad, error quam delectus ullam esse consequuntur pariatur unde reprehenderit dolore dignissimos minus quos non numquam? Mollitia pariatur commodi perferendis similique expedita.</p>
     </div>
-    <div class="header">
-            <h1 class="gradient-text"style="color:white;">High Quality Spices And Delievery Services</h1>
+<div class="contact-parent">
+    <div class="contact-us flex_Style">
+        <a href="mailto:email@companymail.com" target="_blank" > 
+        <div class="card-contact" id="email">
+            <i class="fas fa-envelope-square"></i>
+            <h3>Mail us at:</h3>
+            <h2>Email@companyemail.com</h2>
         </div>
+        </a>
+        <a href="https://api.whatsapp.com/send?phone=918999979567" target="_blank">
+        <div class="card-contact" id="whatsapp">
+            <i class="fab fa-whatsapp"></i>
+            <h3>Text us at</h3>
+            <h2>+91 8999979567</h2>
+        </div>
+        </a>
+    </div>
+    <div class="contact-us center-card">
+        <div class="card-contact" id="map_container">
+            <div id="map"></div>
+        </div>
+    </div>
+    
 </div>
+</div>
+<footer>
+    <div class="fot-1">
+        <img src="../resources/Logo-with-Tm-azalea.png" alt="">
+        <div class="icon-container">
+            <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fas fa-envelope-square"></i>
+                <i class="fab fa-instagram-square"></i>
+                <a href="https://api.whatsapp.com/send?phone=918999979567" target="_blank">
+                <i class="fab fa-whatsapp-square" ></i>
+                </a><br>
+            </div>
+            <a href="#top" class="backToTop">   BACK TO TOP</a>
+    </div>
+    <div class="fot-2">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15062.204731077556!2d73.0530488!3d19.3018745!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe5ac0294275b4ec8!2sAZALEA%20FOOD%20%26%20SPICES!5e0!3m2!1sen!2sin!4v1624623894604!5m2!1sen!2sin" width="100%" height="270" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <p>Azalea is a trademark used by Aayeshar Enterprise (OPC) Private Limited
+        CIN=U74999MH20200PC347348
+        ROC=MUMBAI</p>
+    </div>
+</footer>
+<script src="./script.js"></script>
+<script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaQ8Vdx5V5Oe0wEgiSPLsgIrTkggpzPZ0&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
 </body>
