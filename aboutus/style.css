@@ -381,7 +381,6 @@ footer{
 @media screen and (max-width: 576px){
 body{
         max-width: 576px;
-        border:1px solid red;
     }
     .closebtn{
         display:block;
