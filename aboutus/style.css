@@ -284,8 +284,9 @@ transform-origin:bottom left;
     margin-top:-4%;
     height:50vh;
     padding-bottom: -2rem;
-
+    color:rgb(0, 0, 0);
 }
+
 .card-contact:hover{
     background:#ffffff;
     transition:0.5s;
@@ -300,14 +301,7 @@ transform-origin:bottom left;
     justify-self:center;
     font-size:5rem;
 }
-#map{
-    height:inherit;
-    border-radius:inherit;
-    
-}
-.center-card .card-contact{
-    background:transparent;
-}
+
 .card-contact h2, .card-contact h3{
     display: flex;
     align-items: center;
@@ -377,7 +371,9 @@ footer{
     letter-spacing:15px;
     color:white;
 }
-
+.center-card h1{
+    padding-top:2rem;
+}
 @media screen and (max-width: 576px){
 body{
         max-width: 576px;

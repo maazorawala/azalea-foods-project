@@ -1,0 +1,129 @@
+@font-face {
+    src: url('./resources/fonts/HenriDidot.otf');
+    font-family:newFont;
+}
+html{
+    scroll-behavior: smooth;
+    margin:0;
+    padding:0;
+    transition:0.5s ease-in-out;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 1200;
+    background: url(../resources/tyler-lastovich-DMJUIGRO_1M-unsplash.jpg)center/cover fixed;
+    color: rgb(0, 0, 0);
+}
+a{
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    justify-self:center;
+    height:80vh;
+}
+.header h1{
+    font-size:5rem;
+    color:rgb(0, 0, 0);
+    font-family: 'Raleway';
+
+
+}
+.gradient-text {
+    font-weight: normal;
+    cursor: pointer;
+}
+
+p{
+    font-family: 'Raleway', sans-serif;
+}
+
+.navbar{
+    margin-top:0px;
+    transition:0.3s ease-out;
+    overflow:hidden;
+    height:15vh;
+}
+.nav-links{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    display: flex-end;
+    align-items: right;
+    justify-content: right;
+    text-align: right;
+    align-self: right;
+    justify-self:right;
+    transition:0.3s ease-out;
+    margin-top:-5%;
+}
+.nav-links a{
+    color:rgba(0, 0, 0, 0.738);
+    font-size:1.5rem;
+    padding: 15px;
+    font-weight: 600;
+    transition: 0.5s ease-in-out;
+}
+.nav-links a:hover{
+    color:rgb(0, 0, 0);
+    transition:0.5s;
+}
+a.left{
+    position:relative;
+}
+a.left:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    right: 0;
+    background: rgb(0, 0, 0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+a.left:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+#load{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    z-index: 1;
+    display: flex;
+    animation:spin 1s linear infinite;
+}
+    @keyframes spin{
+        100%{
+            transform:rotate(360deg);
+        }
+    }
+.center{
+    position: absolute; 
+    top: 0; 
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+    margin: auto; 
+}
+#main{
+    transition:0.5s;
+    margin:0;
+    padding:0;
+    width:100%;
+}
+#open-navbar, .closebtn{
+    display:none
+}
