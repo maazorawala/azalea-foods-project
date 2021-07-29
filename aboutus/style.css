@@ -287,11 +287,6 @@ transform-origin:bottom left;
     color:rgb(0, 0, 0);
 }
 
-.card-contact:hover{
-    background:#ffffff;
-    transition:0.5s;
-    border:10px solid rgb(255, 0, 0);
-}
 .card-contact i{
     display: flex;
     align-items: center;

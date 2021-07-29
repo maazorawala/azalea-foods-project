@@ -1,5 +1,5 @@
 @font-face {
-    src: url('./resources/fonts/HenriDidot.otf');
+    src: url('../resources/fonts/HenriDidot.otf');
     font-family:newFont;
 }
 html{
@@ -98,6 +98,8 @@ a.left:hover:after{
     transform-origin: bottom left;
 }
 #load{
+        border:rgb(255, 255, 255) 5px solid;
+    border-top:5px transparent solid;
     border-radius: 50%;
     height: 100px;
     width: 100px;
@@ -126,4 +128,159 @@ a.left:hover:after{
 }
 #open-navbar, .closebtn{
     display:none
+}
+.modal-style-container{
+    height:auto;
+}
+.blog-style{
+    height:50vh;
+    margin:5rem;
+    width:max-width;
+    background:rgba(0, 0, 0, 0.9);
+    border-radius:2.5rem;
+    display:flex;
+    color:white;   
+    overflow: hidden;
+    transition:0.5s ease-in-out;
+}
+.img-container,.content{
+    width:50vw;
+    border-radius:inherit;
+    height: inherit;
+    overflow: hidden;
+
+}
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    justify-self:center;
+    font-size:1.5rem;
+    letter-spacing: 2px;
+}
+.img-container img{
+    height:60vh;
+}
+#blog-2 .img-container img,#blog-3 .img-container img{
+    width:100%;
+    height:auto;
+}
+.blog-style:hover{
+    transition:0.5s;
+    box-shadow: 1rem 1.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.248);
+    padding:0.5rem;
+}
+.modal-style{
+    border:1px solid black;
+    height:100vh;
+    width:50vw;
+    background:rgb(0, 0, 0);
+    color:white;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    z-index: 5;
+    animation: 0.5s animateTop linear;
+    animation-fill-mode:forwards;
+    position:fixed;
+    letter-spacing:2px;
+    padding:1rem;
+}
+.overlay{
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0,0.5);
+    z-index: 4;
+}
+.hidden{
+    display: none;
+}
+@keyframes animateTop{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+.close-modal{
+    background:transparent;
+    color:white;
+    border:0;
+    font-size:2rem;
+    cursor:pointer;
+}
+.modal-1 h1{
+    font-family: 'Poppins';
+    background-image: linear-gradient(45deg, #ff6d6d, #ffffff);
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    justify-self:center;
+}
+.close-modal{
+    color:rgb(255, 255, 255);
+}
+.logo-parallax{
+    border:1px solid black;
+    height:30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    justify-self:center;
+background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(138, 255, 95) 100%);
+    color:black;
+    border-radius:2rem;
+}
+.logo-parallax img{
+    height:30vh;
+    
+}
+.modal-2 h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    justify-self:center;
+    background-image: linear-gradient(45deg, #05f028, #5aede9);
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+.modal-3 .logo-parallax{
+    background: rgb(67,255,206);
+background: linear-gradient(90deg, rgba(67,255,206,1) 0%, rgba(60,126,255,1) 100%);
+}
+.modal-3{
+    font-weight:lighter;
+}
+.modal-3 h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    justify-self:center;
+    letter-spacing: 10px;
+    font-size: 3rem;
+    font-family:'Poppins';
+}
+
+.modal-3 a:hover{
+    transition:0.4s;
+    text-decoration:underline;
 }
