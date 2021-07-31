@@ -488,9 +488,8 @@ body{
 .mysideNav a{
     font-size:4vh;
     text-decoration:none;
-
     display: block;
-    padding:6.9vh;
+    padding:7.5vh;
     text-align: center;
     background:rgb(0, 0, 0);
     color: rgba(255,255,255,0.5 );
@@ -505,7 +504,7 @@ body{
     top: 0;
     left: 0;
     position: fixed;
-    height:100vh;
+    height:auto;
 }
 #sideNav{
     position: fixed;

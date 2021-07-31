@@ -98,7 +98,7 @@ a.left:hover:after{
     transform-origin: bottom left;
 }
 #load{
-        border:rgb(255, 255, 255) 5px solid;
+        border:rgb(0, 0, 0) 5px solid;
     border-top:5px transparent solid;
     border-radius: 50%;
     height: 100px;
@@ -279,8 +279,142 @@ background: linear-gradient(90deg, rgba(67,255,206,1) 0%, rgba(60,126,255,1) 100
     font-size: 3rem;
     font-family:'Poppins';
 }
-
 .modal-3 a:hover{
     transition:0.4s;
     text-decoration:underline;
+}
+footer{
+    height:42vh;
+    display: flex;
+    background:transparent;
+    color:rgb(255, 255, 255);
+}
+.fot-1{
+    
+    width:35vw;
+}
+.fot-2{
+    width:65vw;
+}
+.fot-1 img{
+    height:60%;
+    margin-left:35%;    
+}
+.fot-1 .icon-container{
+    height:30%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    justify-self:center;
+}
+.icon-container i{
+    font-size:2.5rem;
+    margin:0.5rem;
+    color:rgb(166, 166, 166);
+    transition:0.3s ease-in-out;
+    cursor:pointer;
+}
+.icon-container i:hover{
+    color:#000000;
+    transition:0.4s;
+}
+.backToTop {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    justify-self:center;
+    font-size:1.5rem;
+    letter-spacing:15px;
+    color:white;
+}
+@media screen and (max-width: 576px){
+body{
+        max-width: 576px;
+    }
+    .closebtn{
+        display:block;
+    }
+#open-navbar{
+    display:block;
+    margin-left:58%
+}
+
+.mysideNav a{
+    font-size:4vh;
+    text-decoration:none;
+    display: block;
+    padding:7.5vh;
+    text-align: center;
+    background:rgb(0, 0, 0);
+    color: rgba(255,255,255,0.5 );
+    transition:0.3s ease-out;
+}
+.mysideNav{
+    display:block;  
+    z-index: 1;
+    transition: 0.5s;
+    overflow-x: hidden;
+    width: 0px;
+    top: 0;
+    left: 0;
+    position: fixed;
+    height:auto;
+}
+#sideNav{
+    position: fixed;
+}
+.mysideNav a:hover{
+    color: white; 
+    transition: 0.5s;
+}
+a.left:after{
+    width:0%;
+}
+.navbar{
+    display:flex;
+}
+footer{
+    display:block;
+    height: fit-content;
+    padding:0;
+    width:100vw;
+}
+.fot-1 img{
+    width:85vw;
+    margin-left:0;
+}
+.fot-1{
+    width:90vw;
+}
+.fot-2 iframe{
+    width:100vw;
+}
+.blog-style{
+    padding:0;
+    margin:0.5rem;
+    width:max-device-width;
+    display:block;
+    overflow:visible;
+    height: max-content;
+    display:block;
+}
+.img-container,.content {
+    width:inherit;
+}
+.img-container img{
+height:30vh;
+}
+#blog-2 .img-container img,#blog-3 .img-container img{
+    height:30vh;
+}
+#blog-2 .content, #blog-3 .content{
+    padding:2rem;
+}
+.modal-style{
+    width:100vw;
+}
 }

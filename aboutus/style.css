@@ -269,10 +269,14 @@ transform-origin:bottom left;
     height:38vh;
     width:40vw;
     margin:5rem;
-    background:#F2D1BA;
+    background:#ffffff;
     border-radius:2rem;
     transition:0.4s ease-in-out;
         border:0px solid white;
+}
+.card-contact:hover{
+    border:10px solid red;
+    transition:0.4s;
 }
 .center-card{
     display: flex;
@@ -329,7 +333,6 @@ footer{
     margin-left:35%;    
 }
 .fot-1 .icon-container{
-
     height:30%;
     display:flex;
     align-items: center;
@@ -396,12 +399,12 @@ footer{
 .fot-2 iframe{
     width:100vw;
 }
+
 .mysideNav a{
     font-size:4vh;
     text-decoration:none;
-
     display: block;
-    padding:6.9vh;
+    padding:7.5vh;
     text-align: center;
     background:rgb(0, 0, 0);
     color: rgba(255,255,255,0.5 );
@@ -416,7 +419,7 @@ footer{
     top: 0;
     left: 0;
     position: fixed;
-    height:100vh;
+    height:auto;
 }
 #sideNav{
     position: fixed;
@@ -494,17 +497,25 @@ a.left:after{
     margin:0px;
     padding:1rem;
     height:60vh;
+    margin-top:-6%;
 }
 .card-contact{
     margin:0.5rem;
     width:88vw;
-    height:30vh;
+    height:auto;
 }
 .card-contact h2{
     font-size:1.5rem;
 }
 .center-card{
-    height:35vh;
-    margin-top:0;
+    height:auto;
+    padding-left:1rem;
+}
+.center-card .card-contact{
+    height:fit-content;
+    margin-top:-25%;
+}
+.card-contact:hover{
+    border:0;
 }
 }
