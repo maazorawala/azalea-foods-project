@@ -142,6 +142,7 @@ a.left:hover:after{
     color:white;   
     overflow: hidden;
     transition:0.5s ease-in-out;
+    cursor:pointer;
 }
 .img-container,.content{
     width:50vw;
@@ -188,6 +189,7 @@ a.left:hover:after{
     position:fixed;
     letter-spacing:2px;
     padding:1rem;
+    
 }
 .overlay{
     position: fixed;

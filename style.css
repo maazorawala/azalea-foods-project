@@ -185,21 +185,18 @@ transform: translateZ(0);
     display: flex;
     height:70vh;
     background: hsl(0, 0%, 0%) ;
-    border-radius:50px;
-        overflow: hidden;
+    overflow: hidden;
     color:white;
 }
 .slide-img{
-    border-radius:50px;
-    border-top-right-radius: 50px;
     width:50%;
     overflow: hidden;
 }
 
 #slides{
     position:relative;
-    height:70vh;
-     border-top-right-radius: 25px;
+    height:75vh;
+    margin-top:0;
     display:flex;
     align-items: center;
     justify-content: center;
@@ -404,7 +401,7 @@ transform: translateZ(0);
     transition:0.3s ease-in-out;
 }
 .col-1 button:hover{
-    transition:0.5s;
+    transition:0.3s;
     background:black;
     color:white;
     border:10px solid rgb(0, 157, 255);
