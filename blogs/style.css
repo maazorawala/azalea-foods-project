@@ -418,5 +418,12 @@ height:30vh;
 }
 .modal-style{
     width:100vw;
+    font-size: 1rem;
+    overflow-y: scroll;
 }
+.close-modal{
+    font-size:2.5rem;
+    border:1px solid white;
+}
+
 }
